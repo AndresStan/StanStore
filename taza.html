@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Taza - StanStore</title>
+    <link rel="stylesheet" href="CSS/css.css"> <!-- Enlaza el CSS principal -->
+    <style>
+
+div{
+    
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ddd;
+    margin: 0;
+}
+
+/* Estilos del formulario de configuración de taza */
+.configuracion-taza {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: auto;
+    margin: 20px auto; /* Centrado horizontal */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 3px;
+    margin-right: 20px;
+    max-width: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="file"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position:relative;
+    bottom: auto;
+}
+
+.fotoTAZA{
+
+    
+    max-width: 5cm;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="Cajalogo">
+        <img class="logo" src="Media/logo.PNG" alt="Logo StanStore">
+    </div>
+
+    <div class="BarraNav">
+       <div class="Inicio"><a href="index.html">INICIO</a></div>
+       <div class="Contacto"><a href="contacto.html">CONTACTO</a></div>
+    </div>
+
+    <br>
+
+<center>
+    <img class="fotoTAZA" src="Media/TazaPersonalidad.png" alt="Taza">
+</center>
+
+<center>
+    <section class="configuracion-taza">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Seleccionar diseño predefinido -->
+          
+
+            <!-- Opción para subir un diseño personalizado -->
+            <div class="form-group">
+                <label for="personalizado">Sube tu propio diseño:</label>
+                <input type="file" id="personalizado" name="personalizado" accept="image/*">
+            </div>
+
+            <!-- Colores de la taza -->
+            <div class="form-group">
+                <label for="color">Elige el tipo de diseño:</label>
+                <select id="color" name="color">
+                    <option value="blanco">Diseño individual (Diestro)</option>
+                    <option value="negro">Diseño individual (Zurdo)</option>
+                    <option value="rojo">Diseño individual (Centro)</option>
+                    <option value="azul">Diseño repetido</option>
+                </select>
+            </div>
+
+            <!-- Cantidad -->
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="100">
+            </div> <br>
+            
+            <!-- Botón para añadir al carrito -->
+            <button type="submit">Añadir al carrito</button>
+           
+        </form>
+    </section>
+</center>
+
+    <footer>
+        <p>&copy; 2024 StanStore. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
