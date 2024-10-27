@@ -110,3 +110,18 @@ button:hover {
         width: 100%;
     }
 }
+
+footer {
+    background-color: #333; /* Fondo oscuro para contraste */
+    color: white; /* Texto blanco para visibilidad */
+    text-align: center; /* Centrado */
+    padding: 10px 0; /* Espaciado */
+    position: static; /* Fijado en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    bottom: 0; /* Alineado al fondo de la página */
+    font-size: 0.9em; /* Tamaño del texto un poco más pequeño */
+}
+
+footer p {
+    margin: 0; /* Sin márgenes extra */
+}
